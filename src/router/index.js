@@ -10,19 +10,19 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
-    meta: {
-      enterClass: 'animate__animated animate__fadeInRight',
-      leaveClass: 'animate__animated animate__fadeOutLeft',
-    }
+    // meta: {
+    //   enterClass: 'animate__animated animate__fadeInRight',
+    //   leaveClass: 'animate__animated animate__fadeOutLeft',
+    // }
   },
   {
     path: '/projects',
     name: 'Projects',
     component: () => import(/* webpackChunkName: "projects" */ '../views/Projects.vue'),
-    meta: {
-      enterClass: 'animate__animated animate__fadeInRight',
-      leaveClass: 'animate__animated animate__fadeOutLeft',
-    }
+    // meta: {
+    //   enterClass: 'animate__animated animate__fadeInRight',
+    //   leaveClass: 'animate__animated animate__fadeOutLeft',
+    // }
   },
 /*   {
     path: '/howtobuild',
@@ -37,10 +37,10 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue'),
-    meta: {
-      enterClass: 'animate__animated animate__fadeInRight',
-      leaveClass: 'animate__animated animate__fadeOutLeft',
-    }
+    // meta: {
+    //   enterClass: 'animate__animated animate__fadeInRight',
+    //   leaveClass: 'animate__animated animate__fadeOutLeft',
+    // }
   }
 ]
 
