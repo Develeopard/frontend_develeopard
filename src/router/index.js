@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Projects from '../views/Projects.vue'
+// import Projects from '../views/Projects.vue'
 // import HowToBuild from '../views/HowToBuild.vue'
-import Contact from '../views/Contact.vue'
+// import Contact from '../views/Contact.vue'
 
 
 const routes = [
@@ -18,7 +18,7 @@ const routes = [
   {
     path: '/projects',
     name: 'Projects',
-    component: Projects,
+    component: () => import(/* webpackChunkName: "projects" */ '../views/Projects.vue'),
     meta: {
       enterClass: 'animate__animated animate__fadeInRight',
       leaveClass: 'animate__animated animate__fadeOutLeft',
@@ -36,7 +36,7 @@ const routes = [
   {
     path: '/contact',
     name: 'Contact',
-    component: Contact,
+    component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue'),
     meta: {
       enterClass: 'animate__animated animate__fadeInRight',
       leaveClass: 'animate__animated animate__fadeOutLeft',
