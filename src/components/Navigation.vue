@@ -121,7 +121,7 @@ export default {
     }
 
     .nav-btn{
-        border: 1px solid green;
+        /* border: 1px solid green; */
         position: relative;
         display: none;
         width: 100px;

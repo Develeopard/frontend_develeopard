@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
-// test code
+/* // test code
 const EventListenerMode = {capture: true};
 
 function preventGlobalMouseEvents () {
@@ -33,6 +33,6 @@ function captureMouseEvents (e) {
   e.stopPropagation ();
 }
 
-//test code end
+//test code end */
 
 createApp(App).use(router).mount('#app')
