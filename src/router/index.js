@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+// import Home from '../views/Home.vue'
 // import Projects from '../views/Projects.vue'
 // import HowToBuild from '../views/HowToBuild.vue'
 // import Contact from '../views/Contact.vue'
@@ -9,7 +9,8 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    // component: Home,
+    component: () => import(/* webpackChunkName: "projects" */ '../views/Home.vue'),
     // meta: {
     //   enterClass: 'animate__animated animate__fadeInRight',
     //   leaveClass: 'animate__animated animate__fadeOutLeft',
