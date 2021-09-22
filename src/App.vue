@@ -37,7 +37,7 @@ export default{
 
   .page{
     position: absolute;
-    animation-duration: .5s;
+    /* animation-duration: .5s; */
   }
 
   ::selection {
